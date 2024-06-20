@@ -12,7 +12,7 @@ class Policy(nn.Module):
 
     # Forward pass of the neural network
     def forward(self, state):
-       x = self.hidden(state)
+       x = torch.relu(self.hidden(state))
        return torch.tanh(self.output(x))
 
         

@@ -24,7 +24,7 @@ def zeroth_order_method(policy, env, learning_rate, episodes, iterations, i):
         path = f"{PATH_SCORES}/zero_order_method.txt"
     else:
         path = f"{PATH_SCORES_ZERO_ORDER_METHOD}_{i}.txt"
-
+    
     with open(path, 'w') as f:
         for iter in range(iterations):
             # The parameters of the policy
